@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div className="flex flex-1  flex-wrap items-center justify-around gap-4 max-[960px]:gap-2 ">
             <div className="flex-1 flex-wrap flex items-center justify-center flex-col  gap-4">
                 <h1 className={`text-center grow text-5xl font-ubuntu flex-1 max-[960px]:text-3xl max-[486px]:text-2xl font-bold ${bgColor ? "text-stone-500": "text-green-500"}`}>Hi! I'm Irakli</h1>
-                <p className={`font-inter grow text-xl font-medium flex-1 max-[960px]:text-lg max-[486px]:text-md  text-center  ${bgColor ? "text-zinc-400": "text-lime-100"} `}>Far away from perfection, but dedicated to improve every day.</p>
+                <p className={`font-inter grow text-xl font-medium flex-1 max-[960px]:text-lg max-[486px]:text-md  text-center  ${bgColor ? "text-zinc-400": "text-lime-100"} `}>Far away from perfection, but I am having devotion to improve every day.</p>
             </div>
             <div className="flex-1 flex items-center flex-wrap justify-center grow">
                 <Image src={'/ikako.jpg'} alt={'ikako'} className={`rounded-xl shadow-md w-full  shrink max-[960px]:w-4/5`}  width={350} height={100} priority={95}/>

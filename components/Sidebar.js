@@ -2,22 +2,9 @@ import React, { useEffect,useState } from 'react'
 import { useGlobalContext } from '../context/context'
 import NavContent from './NavContent'
 import {FaRegWindowClose} from 'react-icons/fa'
-
+import { useWindowSize } from '../context/context'
 
 // custom hook to track screen size change
-function useWindowSize(){
-  const [size,setSize] = useState(window.innerWidth);
-  useEffect(()=>{
-    const handleResize = () => {
-      setSize(window.innerWidth)
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  },[])
-  return size;
-}
 
 
 export default function Sidebar() {

@@ -13,11 +13,11 @@ export default function AboutPage() {
   },[slide]);
 
 
-  const {bgColor,setBgColor} = useGlobalContext();
+  const {bgColor,setBgColor,changeBgColor} = useGlobalContext();
 
   return (
     <section id='About' className="flex relative items-center justify-center flex-wrap w-full mt-8 flex-col gap-14 ">
-        <span onClick={()=> setBgColor(!bgColor)} className={`absolute top-0 right-14  py-2 px-4 rounded-2xl cursor-pointer font-ubuntu text-lg font-semibold uppercase ${bgColor ? "bg-black text-gray-100 transition-all hover:bg-gray-100 hover:text-black" : "bg-gray-100 text-black transition-shadow hover:text-gray-100 hover:bg-black"}`}>
+        <span onClick={()=> changeBgColor(!bgColor)} className={`absolute top-0 right-14  py-2 px-4 rounded-2xl cursor-pointer font-ubuntu text-lg font-semibold uppercase ${bgColor ? "bg-black text-gray-100 transition-all hover:bg-gray-100 hover:text-black" : "bg-gray-100 text-black transition-shadow hover:text-gray-100 hover:bg-black"}`}>
           {bgColor ? <BsSun /> : <BsFillMoonFill />}
           </span>
         <h1 className={`font-ubuntu mt-10 flex-1 text-5xl max-[960px]:text-3xl max-[486px]:text-2xl ${bgColor ? "text-stone-500": "text-green-500"} font-bold `}>Software Developer</h1>

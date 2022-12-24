@@ -4,13 +4,36 @@ const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
 
-    const [bgColor,setBgColor] = useState(true);
-    const [isOpen,setIsOpen] = useState(false)
+
+
+    const [bgColor,setBgColor] = useState(null);
+    const [isOpen,setIsOpen] = useState(false);
+
+
+    useEffect(()=>{
+     
+      if(localStorage.getItem("bgColorStatus") === "true" || localStorage.getItem("bgColorStatus") === "false"){
+       
+        setBgColor(JSON.parse(localStorage.getItem("bgColorStatus")))
+
+      }else{
+        setBgColor(true)
+      }
+    },[])
+
+
+    const changeBgColor = () => {
+      setBgColor(!bgColor);
+      localStorage.setItem("bgColorStatus",JSON.stringify(!bgColor));
+
+    
+    }
+
 
 
   return (
     <AppContext.Provider
-      value={{bgColor,setBgColor,isOpen,setIsOpen}}
+      value={{bgColor,setBgColor,isOpen,setIsOpen,changeBgColor}}
     >
       {children}
     </AppContext.Provider>

@@ -60,10 +60,10 @@ export function useScrollHeight(){
   useEffect(()=>{
     const handleResize = () => {
     
-       if(window.pageYOffset > 106 && window.pageYOffset < 206){
+       if(window.pageYOffset > 106){
         setSLide([...slide,slide[0].myStack=true]);
       }
-       if(window.pageYOffset > 583 && window.pageYOffset < 683){
+       if(window.pageYOffset > 583 ){
        
         setSLide([...slide,slide[0].projects=true]);
        

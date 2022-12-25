@@ -65,7 +65,7 @@ export const projects = [
     {   
         name:"ikakos-eccomerce",
         webImg: "/ikakos-eccomerce.png",
-        liveLink: "https://ikakos-ecommerce.netlify.app/",
+        liveLink: "https://ikakos-eccomerce.vercel.app/",
         githubLink:"https://github.com/irakli777irakli/ikakos-eccomerce",
         technologies: [
             {

@@ -131,7 +131,7 @@ export const projects = [
     {
         name:"Recipe App Yalama",
         webImg: "/ikakos-recipeapp.png",
-        liveLink: "https://yalava.netlify.app/",
+        liveLink: "https://recipeapp-six.vercel.app/",
         githubLink:"https://github.com/irakli777irakli/Recipe-Yalama",
         technologies:[
             {

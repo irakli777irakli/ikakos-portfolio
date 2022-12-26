@@ -44,10 +44,10 @@ module.exports = {
         }
       },
       animation: {
-        slide: 'slide 1.2s ease-in-out  ',
-        slider: 'slider 1.2s ease-in-out ',
-        projectDesc: 'projectDesc 1s ease-in-out ',
-        projecPic: 'projecPic 1s ease-in-out ',
+        slide: 'slide 0.8s ease-in-out  ',
+        slider: 'slider 0.8s ease-in-out ',
+        projectDesc: 'projectDesc 0.8s ease-in-out ',
+        projecPic: 'projecPic 0.8s ease-in-out ',
       },
     },
     

@@ -27,7 +27,7 @@ export default function AboutPage() {
                 <p className={`font-inter grow text-xl font-medium flex-1 max-[960px]:text-lg max-[486px]:text-md  text-center  ${bgColor ? "text-zinc-400": "text-lime-100"} `}>Far away from perfection, but I am having devotion to improve every day.</p>
             </div>
             <div className="flex-1 flex items-center flex-wrap justify-center grow">
-                <Image src={'/ikako.jpg'} alt={'ikako'} className={`rounded-xl shadow-md w-full  shrink max-[960px]:w-4/5`}  width={350} height={100} priority={95}/>
+                <Image src={'/ikako.jpg'} alt={'ikako'} className={`rounded-xl shadow-md w-full  shrink max-[960px]:w-4/5`}  width={300} height={100} priority={95}/>
             </div>
         </div>
         <div className={`${slide[0].myStack ? "opacity-1" : "opacity-0"} flex flex-1 gap-10 flex-col flex-wrap ${slide[0].myStack ? "animate-slider" : ""}`}>

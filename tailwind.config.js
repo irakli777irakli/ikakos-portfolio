@@ -41,15 +41,38 @@ module.exports = {
           '50%': { transform: 'translate(-1000px)' },
           '75%': {transform: 'translate(-500px)'},
           '100%': {transform: 'translate(0)'},
+        },
+        rotateDark: {
+        
+          '0%': { boxShadow: '0 0 35px 5px rgba(34, 197, 94, .4)'},
+          '25%': { boxShadow: '0 0 35px 5px rgba(34, 197, 94, .7)'},
+          '50%': { boxShadow: '0 0 35px 5px rgba(34, 197, 94, .5)'},
+          '75%': {  boxShadow: '0 0 35px 5px rgba(34, 197, 94, .7)'},
+          '100%': {boxShadow: '0 0 35px 5px rgba(34, 197, 94, 0.4)'},
+        },
+        rotateLight: {
+        
+          '0%': { boxShadow: '0 0 35px 5px rgba(153,153,0, .4)'},
+          '25%': { boxShadow: '0 0 35px 5px rgba(153,153,0, .7)'},
+          '50%': { boxShadow: '0 0 35px 5px rgba(153,153,0, .5)'},
+          '75%': {  boxShadow: '0 0 35px 5px rgba(153,153,0, .7)'},
+          '100%': {boxShadow: '0 0 35px 5px rgba(153,153,0, 0.4)'},
         }
+
       },
       animation: {
         slide: 'slide 0.8s ease-in-out  ',
         slider: 'slider 0.8s ease-in-out ',
         projectDesc: 'projectDesc 0.8s ease-in-out ',
         projecPic: 'projecPic 0.8s ease-in-out ',
+        rotateDark: "rotateDark 2.8s ease-in-out 0s infinite running ",
+        rotateLight: "rotateLight 2.8s ease-in-out 0s infinite running"
       },
     },
+    boxShadow: {
+      'main': '0 0 35px 5px rgba(87, 212, 122, 1)',
+    },
+  
     
   },
   plugins: [],

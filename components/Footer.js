@@ -7,9 +7,7 @@ export default function Footer() {
         <div className="w-5/6 shrink flex-wrap flex items-center justify-around gap-6 p-8 max-[1024px]:flex-col">
             <div className="flex-1 flex-wrape">
                 <p className="font-kalam text-lg font-semibold text-neutral-200">
-                I strongly believe that I can achieve anything I want, if I put my mind to it.
-                Just give me enough time and I will get it done.
-                Because I know, that for a fact cause, I know who, I am as a man.
+                My word is iron-willed, whatever I say has/will happen in some point of time.
                 </p>
             </div>
             <div className="flex-1">

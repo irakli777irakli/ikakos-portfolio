@@ -44,19 +44,19 @@ module.exports = {
         },
         rotateDark: {
         
-          '0%': { boxShadow: '0 0 35px 5px rgba(34, 197, 94, .4)'},
-          '25%': { boxShadow: '0 0 35px 5px rgba(34, 197, 94, .7)'},
-          '50%': { boxShadow: '0 0 35px 5px rgba(34, 197, 94, .5)'},
-          '75%': {  boxShadow: '0 0 35px 5px rgba(34, 197, 94, .7)'},
-          '100%': {boxShadow: '0 0 35px 5px rgba(34, 197, 94, 0.4)'},
+          '0%': { boxShadow: '0 0 3px 7px rgba(34, 197, 94, .4)'},
+          '25%': { boxShadow: '0 0 3px 10px rgba(34, 197, 94, .7)'},
+          '50%': { boxShadow: '0 0 3px 7px rgba(34, 197, 94, .5)'},
+          '75%': {  boxShadow: '0 0 3px 10px rgba(34, 197, 94, .7)'},
+          '100%': {boxShadow: '0 0 3px 7px rgba(34, 197, 94, 0.4)'},
         },
         rotateLight: {
         
-          '0%': { boxShadow: '0 0 35px 5px rgba(153,153,0, .4)'},
-          '25%': { boxShadow: '0 0 35px 5px rgba(153,153,0, .7)'},
-          '50%': { boxShadow: '0 0 35px 5px rgba(153,153,0, .5)'},
-          '75%': {  boxShadow: '0 0 35px 5px rgba(153,153,0, .7)'},
-          '100%': {boxShadow: '0 0 35px 5px rgba(153,153,0, 0.4)'},
+          '0%': { boxShadow: '0 0 1px 7px rgba(204,102,0, .4)'},
+          '25%': { boxShadow: '0 0 1px 10px rgba(204,102,0, .7)'},
+          '50%': { boxShadow: '0 0 1px 10px rgba(204,102,0, .5)'},
+          '75%': {  boxShadow: '0 0 1px 10px rgba(255,128,0, .7)'},
+          '100%': {boxShadow: '0 0 1px 7px rgba(255,128,0, 0.4)'},
         }
 
       },
@@ -71,6 +71,8 @@ module.exports = {
     },
     boxShadow: {
       'main': '0 0 35px 5px rgba(87, 212, 122, 1)',
+      'projectpic': '1px 2px 5px 4px rgba(102,255,102,0.5)',
+
     },
   
     

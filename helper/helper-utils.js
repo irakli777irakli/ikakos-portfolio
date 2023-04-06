@@ -1,53 +1,64 @@
 export const navItems = ["About","Projects","Contact"]
-import {DiJsBadge,DiReact,DiPython,DiHtml5, DiCss3,DiPostgresql} from 'react-icons/di'
+import {DiJsBadge,DiReact,DiPython, DiCss3,DiPostgresql} from 'react-icons/di'
 import {TbBrandNextjs} from 'react-icons/tb'
-import {SiFastapi,SiStyledcomponents,SiSolidity,SiRedux,SiGit,SiYarn} from 'react-icons/si'
+import {
+    SiFastapi,SiSolidity,SiRedux,SiGit,
+    SiTypescript,SiCsharp,SiDotnet,SiMicrosoftsqlserver
+} from 'react-icons/si'
+import {FaAngular,FaSass} from 'react-icons/fa';
 
 
 export const techStack = [
+    
     {
-        symbol: <DiJsBadge color='yellow'/>,
-        name: "Javascript"
+        symbol: <SiTypescript color='#2F58CD'/>,
+        name: "Typescript"
     },
     {
-        symbol: <DiReact color='#82C3EC' />,
-        name: "Reactjs"
-    },
-    {
-        symbol: <DiHtml5 color='orange'/>,
-        name: "Html"
-    },
-    {
-        symbol: <DiCss3 color='#4B56D2'/>,
-        name: "Css"
-    },
-    {
-        symbol: <TbBrandNextjs color='black'/>,
-        name: "Nextjs" 
-    },
-    {
-        symbol: <SiGit color='#EF9A53' />,
-        name: "Git"
-    },
-    {
-        symbol:<SiYarn color='#C0DEFF'/>,
-        name: "Yarn"
-    },
-    {
-        symbol: <SiStyledcomponents color='#C7BCA1'/>,
-        name: "Syled components"
-    },
-    {
-        symbol: <SiRedux color='#8D72E1'/>,
-        name: "Redux-toolkit"
+        symbol: <SiCsharp color='#77037B' />,
+        name: "C#",
     },
     {
         symbol: <DiPython color='#25316D'/>,
         name: "Python",
     },
     {
-        symbol: <SiFastapi color='#A6F0C6'/>,
+        symbol: <DiReact color='#82C3EC' />,
+        name: "Reactjs"
+    },
+    {
+        symbol: <TbBrandNextjs color='black'/>,
+        name: "Nextjs" 
+    },
+    {
+        symbol: <FaAngular color='#E74646' />,
+        name: "Angular" 
+    },
+    {
+        symbol: <SiDotnet color='#97DEFF' />,
+        name: "Asp net core",
+    },
+    {
+        symbol: <SiFastapi color='#03C988'/>,
         name: "FastApi"
+    },
+    {
+        symbol: <FaSass color='#B46060'/>,
+        name: "Sass"
+    },
+    {
+        symbol: <SiGit color='#EF9A53' />,
+        name: "Git"
+    },
+    {
+        symbol: <SiRedux color='#8D72E1'/>,
+        name: "Redux-toolkit"
+    },
+    
+    
+    {
+        symbol: <SiMicrosoftsqlserver color='#89375F'/>,
+        name: "Microsoftsqlserver",
     },
     {
         symbol: <DiPostgresql color='#A555EC'/>,
@@ -56,7 +67,9 @@ export const techStack = [
     {
         symbol: <SiSolidity color='#1A120B' />,
         name: "Solidity",
-    }
+    },
+    
+    
 
 ]
 
@@ -98,45 +111,47 @@ export const projects = [
         ],
     },
     {
-        name:"Genearl News_",
-        webImg: "/ikakos-newsapp.png",
-        liveLink: "https://general-news.vercel.app/",
-        githubLink:"https://github.com/irakli777irakli/GeneralNews_",
+        name:"Food App",
+        webImg: "/foodapp.png",
+        liveLink: "https://foodapp-iota.vercel.app/",
+        githubLink:"https://github.com/irakli777irakli/foodapp",
         technologies: [
             {
-                symbol: <TbBrandNextjs color='black'/>,
-                name: "Nextjs" 
+                symbol: <DiReact color='#82C3EC'/>,
+                name: "Reactjs" 
             },
             {
-                symbol: <DiCss3 color='#4B56D2'/>,
-                name: "Css"
+                symbol: <SiTypescript color='#2F58CD'/>,
+                name: "Typescript"
             },
+            {
+                symbol: <FaSass color='#B46060'/>,
+                name: "Sass"
+            },
+
             {
                 symbol: <SiGit color='#EF9A53' />,
                 name: "Git"
             },
         ],
-        projectDetails: "I get inspiration of this project from the intercept online magazine, I used conditional rendering heavily there, to achieve same output, I have used API, Which return 25 articles, about each Topic, So I had to clean and conditionaly display them, so Sometimes it takes some time to load single New on fly.",
-        projectDifficulties: "It was first time, me building project with next js, I was used to client side data fetching and then storing it to state, But I have read that this is not the way how data fetching is done in Next js, Images are different than img, fonts are optimized, so I forced myself to learn about these.",
-        mySolution: "I have understand core concept of nextJs, file based routing, increamental site generation, server side rendering, and when to use which. Images optimization, lazy loading and I continued building this project.",
+        projectDetails: "Explore recipes by category and name",
+        projectDifficulties: "First time using Typescript in react app.",
+        mySolution: "I have understand core concepts of React typescript. Interfaces with props, ContextAPI types. working with null and undefined",
         notableFeatures: [
-           "incremental site generation",
-           "server side rendering",
-           "file based routing",
-           "view single New",
-           "Search based on Category",
+            "search favorite food within categories",
+            "read recipe"
         ],
         
     },
     {
-        name:"Recipe App Yalama",
-        webImg: "/ikakos-recipeapp.png",
-        liveLink: "https://recipeapp-six.vercel.app/",
-        githubLink:"https://github.com/irakli777irakli/Recipe-Yalama",
+        name:"Cv Generator",
+        webImg: "/cvGenerator.png",
+        liveLink: "https://vercel.com/irakli777irakli/registration-form",
+        githubLink:"https://github.com/irakli777irakli/registration-form",
         technologies:[
             {
-                symbol: <DiReact color='#82C3EC' />,
-                name: "Reactjs"
+                symbol: <TbBrandNextjs color='black'/>,
+                name: "Nextjs"
             },
             {
                 symbol: <DiCss3 color='#4B56D2'/>,
@@ -147,13 +162,12 @@ export const projects = [
                 name: "Git"
             },
         ],
-        projectDetails: "Search meals by category, explore recipies, add to favorites,",
-        projectDifficulties: "At first I was using state and then drilling them as a props, but then it became nearly impossible to manage it. plus useEffect which was turing into infinite loop",
-        mySolution: "I used React context to manage app level state, used conditional useEffects, when fetching data. ",
+        projectDetails: "Registration Form",
+        projectDifficulties: "This was the Redberry agency's internship Task which had to be complated within 10days",
+        mySolution: "I have used reactive forms with conditional rendering to generated different forms with single Component",
         notableFeatures: [
-           "search favorite food within categories",
-           "add and remove from favorites",
-           "read recipe"
+           "enter your details and generate cv",
+           "see how your cv is generated"
         ],
         
     }

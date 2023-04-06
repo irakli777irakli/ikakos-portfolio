@@ -21,10 +21,12 @@ export default function AboutPage() {
           {bgColor ? <BsSun /> : <BsFillMoonFill />}
           </span>
         <h1 className={`font-ubuntu mt-10 flex-1 text-5xl max-[960px]:text-3xl max-[486px]:text-2xl ${bgColor ? "text-stone-500": "text-green-500"} font-bold `}>Software Developer</h1>
-        <div className={`${slide[0].ikakosPicture === false ? "opacity-0" : "opacity-1"} flex flex-1  flex-wrap items-center justify-around gap-4 max-[960px]:gap-6  ${slide[0].ikakosPicture ? "animate-slide" : ""} max-[700px]:flex-col`}>
+        <div className={`${slide[0].ikakosPicture === false ? "opacity-0" : "opacity-1"}
+        
+        flex flex-1  flex-wrap items-center justify-around gap-4 max-[960px]:gap-6  ${slide[0].ikakosPicture ? "animate-slide" : ""} max-[700px]:flex-col`}>
             <div className="flex-1 flex-wrap flex items-center justify-center flex-col  gap-4">
                 <h1 className={`text-center grow text-5xl font-ubuntu flex-1 max-[960px]:text-3xl max-[486px]:text-2xl font-bold ${bgColor ? "text-stone-500": "text-green-500"}`}>Hi! I'm Irakli</h1>
-                <p className={`font-inter grow text-xl font-medium flex-1 max-[960px]:text-lg max-[486px]:text-md  text-center  ${bgColor ? "text-zinc-400": "text-lime-100"} `}>I am here to help your bussiness grow, let's get to work.</p>
+                <p className={`font-inter grow text-xl font-medium flex-1 max-[960px]:text-lg max-[486px]:text-md  text-center  ${bgColor ? "text-zinc-400": "text-lime-100"} `}>self motivated, disciplined individual with main focus in Full stack develpment</p>
             </div>
             <div className={`${bgColor ? "animate-rotateLight" : "animate-rotateDark" }
              relative rounded-[50%] overflow-hidden w-10 h-80 flex-1 flex items-center flex-wrap

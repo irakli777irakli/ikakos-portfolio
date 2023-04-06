@@ -33,7 +33,7 @@ export default function ProjectsPage() {
       {projects.map((project,i)=> {
         const {name,webImg,liveLink,githubLink,technologies,projectDetails, projectDifficulties,mySolution,notableFeatures} = project;
         return <>
-          <hr  className={`border-none ${i % 2 === 0 ? `w-full ${bgColor ? "bg-lime-200" : "bg-purple-400"} ` : `w-4/5 ${bgColor ? "bg-lime-300" : "bg-purple-700"}`} h-1 `}/>
+          <hr  className={`border-none ${i % 2 === 0 ? `w-full ${bgColor ? "bg-red-500" : "bg-purple-400"} ` : `w-4/5 ${bgColor ? "bg-violet-500" : "bg-purple-700"}`} h-1 `}/>
         <div key={i} className="flex gap-4 flex-wrap items-start shrink grow content-around max-[1024px]:flex-col">
           
           <div className={`${slide[0].projects ? "opacity-1": "opacity-0"}  flex flex-grow-3  flex-col items-start justify-start shrink grow gap-4 ${slide[0].projects ? "animate-projecPic" : ""}`}>
@@ -57,32 +57,32 @@ export default function ProjectsPage() {
 
           <div className={`${slide[0].projects ? "opacity-1" :  "opacity-0"} flex-grow-1 flex shrink flex-col gap-6 justify-start items-start ${slide[0].projects ? "animate-projectDesc": ""}`}>
             <div className="flex flex-1 flex-col gap-4">
-              <h4 className="text-orange-300 font-bold text-3xl">Project Details</h4>
-              <p className={`${bgColor ? "text-gray-500" : "text-stone-300"} text-2xl`}>
+              <h4 className="text-stone-500 font-bold text-2xl">Project Details</h4>
+              <p className={`${bgColor ? "text-gray-500" : "text-stone-300"} text-xl`}>
                 {((truncated === false) && (i === unTruncatedIndex) && ("projectDetails" === whichSegmentIsSelected) ) ? projectDetails : projectDetails.substring(0,100)}
                 <span onClick={() => undoTruncate(i,"projectDetails")}>{((truncated === false) && (i === unTruncatedIndex) && ("projectDetails" === whichSegmentIsSelected) ) ? null :"..." }</span>
                 </p>
             </div>
             <div className="flex flex-1 flex-col gap-4">
-              <h4 className="text-red-400 font-bold text-3xl">Project Difficulties</h4>
-              <p className={`${bgColor ? "text-gray-600" : "text-stone-200"} text-2xl`}>
+              <h4 className="text-red-400 font-bold text-2xl">Project Difficulties</h4>
+              <p className={`${bgColor ? "text-gray-600" : "text-stone-200"} text-xl`}>
                 {((truncated === false) && (i === unTruncatedIndex) && ("projectDifficulties" === whichSegmentIsSelected)) ?  projectDifficulties : projectDifficulties.substring(0,100)}
                 <span onClick={() => undoTruncate(i,"projectDifficulties")}>{((truncated === false) && (i === unTruncatedIndex) && ("projectDifficulties" === whichSegmentIsSelected) ) ? null :"..." }</span>
               </p>
             </div>
             <div className="flex flex-1 flex-col gap-4">
-            <h4 className="text-emerald-400 font-bold text-3xl">My Solution</h4>
-              <p className={`${bgColor ? "text-gray-700" : "text-stone-100"} text-2xl`}>
+            <h4 className="text-gray-600 font-bold text-2xl">My Solution</h4>
+              <p className={`${bgColor ? "text-gray-600" : "text-stone-100"} text-xl`}>
                 {((truncated === false) && (i === unTruncatedIndex) && ("mySolution" === whichSegmentIsSelected)) ? mySolution : mySolution.substring(0,100) }
                 <span onClick={() => undoTruncate(i,"mySolution")}>{((truncated === false) && (i === unTruncatedIndex) && ("mySolution" === whichSegmentIsSelected)) ? null :"..."}</span>
               </p>
             </div>
             <div className="flex flex-1 gap-4 flex-col">
-            <h4 className="text-cyan-400 font-bold text-3xl">Notable Features</h4>
+            <h4 className="text-slate-700 font-bold text-2xl">Notable Features</h4>
             <ul>
               {notableFeatures.map((feature,i)=>{
                 return (
-                  <li  className={`${bgColor ? "text-neutral-800" : "text-yellow-50"} text-lg capitalize font-semibold`} key={feature}>{i+1}. {feature}</li>
+                  <li  className={`${bgColor ? "text-neutral-600" : "text-yellow-50"} text-lg capitalize font-semibold`} key={feature}>{i+1}. {feature}</li>
                 )
               })}
               </ul>

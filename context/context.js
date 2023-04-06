@@ -6,7 +6,7 @@ const AppProvider = ({ children }) => {
 
 
 
-    const [bgColor,setBgColor] = useState(null);
+    const [bgColor,setBgColor] = useState(false);
     const [isOpen,setIsOpen] = useState(false);
 
 
@@ -17,7 +17,7 @@ const AppProvider = ({ children }) => {
         setBgColor(JSON.parse(localStorage.getItem("bgColorStatus")))
 
       }else{
-        setBgColor(true)
+        setBgColor(false)
       }
     },[])
 

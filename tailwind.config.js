@@ -52,11 +52,11 @@ module.exports = {
         },
         rotateLight: {
         
-          '0%': { boxShadow: '0 0 1px 7px rgba(204,102,0, .4)'},
-          '25%': { boxShadow: '0 0 1px 10px rgba(204,102,0, .7)'},
-          '50%': { boxShadow: '0 0 1px 10px rgba(204,102,0, .5)'},
-          '75%': {  boxShadow: '0 0 1px 10px rgba(255,128,0, .7)'},
-          '100%': {boxShadow: '0 0 1px 7px rgba(255,128,0, 0.4)'},
+          '0%': { boxShadow: '0 0 1px 7px rgba(190, 84, 84,.7)'},
+          '25%': { boxShadow: '0 0 1px 10px rgba(190, 84, 84, .7)'},
+          '50%': { boxShadow: '0 0 1px 10px rgba(190, 84, 84, .8)'},
+          '75%': {  boxShadow: '0 0 1px 10px rgba(190, 84, 84, .9)'},
+          '100%': {boxShadow: '0 0 1px 7px rgba(190, 84, 84, 0.6)'},
         }
 
       },

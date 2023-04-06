@@ -5,11 +5,6 @@ export default function Footer() {
   return (
     <footer id="Contact" className="w-full flex items-center justify-center mt-10 bg-gradient-to-r from-gray-900  to-slate-600">
         <div className="w-5/6 shrink flex-wrap flex items-center justify-around gap-6 p-8 max-[1024px]:flex-col">
-            <div className="flex-1 flex-wrape">
-                <p className="font-kalam text-lg font-semibold text-neutral-200">
-                My word is iron-willed, whatever I say has/will happen in some point of time.
-                </p>
-            </div>
             <div className="flex-1">
                 <div className="flex flex-wrap items-center justify-around gap-4 shrink bg-slate-300 py-6 px-24 rounded-sm">
                     <Link href={"https://twitter.com/L1Irakli"} target="_blank ">
